@@ -1,13 +1,13 @@
 cmake_minimum_required(VERSION 3.0.2)
-project(sobits_common_msgs)
+project(sobits_msgs)
 
 ## Find catkin macros and libraries
 ## if COMPONENTS list like find_package(catkin REQUIRED COMPONENTS xyz)
 ## is used, also find other catkin packages
 find_package(catkin REQUIRED COMPONENTS
   std_msgs
-  geometry_msgs
   message_generation
+  geometry_msgs
 )
 
 # Generate messages in the 'msg' folder
@@ -15,11 +15,7 @@ add_message_files(
   FILES
   current_state.msg
   current_state_array.msg
-  BoundingBox.msg
-  BoundingBoxes.msg
   StringArray.msg
-  ObjectPose.msg
-  ObjectPoseArray.msg
 )
 
 # Generate services in the 'srv' folder
@@ -53,5 +49,5 @@ generate_messages(
 ## CATKIN_DEPENDS: catkin_packages dependent projects also need
 ## DEPENDS: system dependencies of this project that dependent projects also need
 catkin_package(
-  CATKIN_DEPENDS message_runtime std_msgs geometry_msgs
+  CATKIN_DEPENDS std_msgs message_runtime geometry_msgs
 )

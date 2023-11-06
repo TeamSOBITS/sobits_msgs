@@ -8,7 +8,7 @@
 [![Issues][issues-shield]][issues-url]
 [![License][license-shield]][license-url]
 
-# SOBITS Common MSGS
+# SOBITS msgs
 
 <!-- 目次 -->
 <details>
@@ -171,13 +171,13 @@ Distributed under the MIT License. See `LICENSE.txt` for more information.
 
 <!-- MARKDOWN LINKS & IMAGES -->
 <!-- https://www.markdownguide.org/basic-syntax/#reference-style-links -->
-[contributors-shield]: https://img.shields.io/github/contributors/TeamSOBITS/sobits_common_msgs.svg?style=for-the-badge
-[contributors-url]: https://github.com/TeamSOBITS/sobits_common_msgs/graphs/contributors
-[forks-shield]: https://img.shields.io/github/forks/TeamSOBITS/sobits_common_msgs.svg?style=for-the-badge
-[forks-url]: https://github.com/TeamSOBITS/sobits_common_msgs/network/members
-[stars-shield]: https://img.shields.io/github/stars/TeamSOBITS/sobits_common_msgs.svg?style=for-the-badge
-[stars-url]: https://github.com/TeamSOBITS/sobits_common_msgs/stargazers
-[issues-shield]: https://img.shields.io/github/issues/TeamSOBITS/sobits_common_msgs.svg?style=for-the-badge
-[issues-url]: https://github.com/TeamSOBITS/sobits_common_msgs/issues
-[license-shield]: https://img.shields.io/github/license/TeamSOBITS/sobits_common_msgs.svg?style=for-the-badge
-[license-url]: https://github.com/TeamSOBITS/sobits_common_msgs/blob/master/LICENSE.txt
+[contributors-shield]: https://img.shields.io/github/contributors/TeamSOBITS/sobits_msgs.svg?style=for-the-badge
+[contributors-url]: https://github.com/TeamSOBITS/sobits_msgs/graphs/contributors
+[forks-shield]: https://img.shields.io/github/forks/TeamSOBITS/sobits_msgs.svg?style=for-the-badge
+[forks-url]: https://github.com/TeamSOBITS/sobits_msgs/network/members
+[stars-shield]: https://img.shields.io/github/stars/TeamSOBITS/sobits_msgs.svg?style=for-the-badge
+[stars-url]: https://github.com/TeamSOBITS/sobits_msgs/stargazers
+[issues-shield]: https://img.shields.io/github/issues/TeamSOBITS/sobits_msgs.svg?style=for-the-badge
+[issues-url]: https://github.com/TeamSOBITS/sobits_msgs/issues
+[license-shield]: https://img.shields.io/github/license/TeamSOBITS/sobits_msgs.svg?style=for-the-badge
+[license-url]: https://github.com/TeamSOBITS/sobits_msgs/blob/master/LICENSE

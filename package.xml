@@ -3,7 +3,7 @@
   href="http://download.ros.org/schema/package_format3.xsd"
   schematypens="http://www.w3.org/2001/XMLSchema"?>
 <package format="3">
-  <name>sobits_common_msgs</name>
+  <name>sobits_msgs</name>
   <version>0.0.0</version>
   <description>
     Common custom ROS msgs for SOBITS robots.
@@ -20,6 +20,7 @@
   <buildtool_depend>catkin</buildtool_depend>
   
   <depend>message_generation</depend>
+  <depend>message_runtime</depend>
   <depend>std_msgs</depend>
   <depend>geometry_msgs</depend>
 
