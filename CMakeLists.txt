@@ -15,6 +15,11 @@ add_message_files(
   FILES
   current_state.msg
   current_state_array.msg
+  ObjectPose.msg
+  ObjectPoseArray.msg
+  BoundingBox.msg
+  BoundingBoxes.msg
+  ObjectPoseArray.msg
   StringArray.msg
 )
 
