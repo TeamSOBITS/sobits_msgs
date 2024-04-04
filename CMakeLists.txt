@@ -15,11 +15,6 @@ add_message_files(
   FILES
   current_state.msg
   current_state_array.msg
-  ObjectPose.msg
-  ObjectPoseArray.msg
-  BoundingBox.msg
-  BoundingBoxes.msg
-  ObjectPoseArray.msg
   StringArray.msg
 )
 
@@ -35,6 +30,7 @@ add_service_files(
   wheel_control.srv
   put_ctrl.srv
   RunCtrl.srv
+  TextToSpeech.srv
 )
 
 # Generate added messages and services with any dependencies listed here
