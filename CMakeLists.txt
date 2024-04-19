@@ -1,4 +1,4 @@
-cmake_minimum_required(VERSION 3.0.2)
+cmake_minimum_required(VERSION 3.10.2)
 project(sobits_msgs)
 
 ## Find catkin macros and libraries
@@ -13,8 +13,15 @@ find_package(catkin REQUIRED COMPONENTS
 # Generate messages in the 'msg' folder
 add_message_files(
   FILES
+  BoundingBox.msg
+  # BoundingBoxArray.msg
+  BoundingBoxes.msg
   current_state.msg
   current_state_array.msg
+  MotorState.msg
+  MotorStateArray.msg
+  ObjectPose.msg
+  ObjectPoseArray.msg
   StringArray.msg
 )
 
@@ -25,12 +32,12 @@ add_service_files(
   gripper_ctrl.srv
   gripper_move.srv
   odom_base.srv
-  robot_motion.srv
-  wheel_ctrl.srv
-  wheel_control.srv
   put_ctrl.srv
+  robot_motion.srv
   RunCtrl.srv
   TextToSpeech.srv
+  wheel_control.srv
+  wheel_ctrl.srv
 )
 
 # Generate added messages and services with any dependencies listed here
