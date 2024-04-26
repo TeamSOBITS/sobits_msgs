@@ -1,2 +1,2 @@
-string joint_name
+string  joint_name
 float64 current_ma
