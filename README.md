@@ -238,15 +238,29 @@ SOBITSとして用意されているROSサービスはこちらとなります�
     bool response
     ```
 
-8.  `wheel_control.srv` : 指定された角度や距離に応じてロボットを移動させるためのsrvです．
+8.  `SpeechRecognition.srv` : 音声認識させるためのsrvです．
+    ```yaml
+    int64 timeout_sec
+    ---
+    string[] transcript
+        ```
+
+9.  `TextToSpeech.srv` : 発話の内容を指定させるためのsrvです．
+    ```yaml
+    string text
+    ---
+    bool result
+    ```
+
+
+10.  `wheel_control.srv` : 指定された角度や距離に応じてロボットを移動させるためのsrvです．
     ```yaml
     float64 straight_line
     float64 turn_angle
     ---
     string responce
     ```
-
-9.  `wheel_ctrl.srv` : 指定された移動方法に応じて正しく移動できたかどうかを確認するためのsrvです．
+11.  `wheel_ctrl.srv` : 指定された移動方法に応じて正しく移動できたかどうかを確認するためのsrvです．
     ```yaml
     string move_order
     ---

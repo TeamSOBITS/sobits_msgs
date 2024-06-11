@@ -238,7 +238,22 @@ ROS services customized by SOBITS are shown below.
     bool response
     ```
 
-8.  `wheel_control.srv` : This srv allows to move the robot according to the specified angle and/or distance.
+8.  `SpeechRecognition.srv` : This srv is for voice recognition.．
+    ```yaml
+    int64 timeout_sec
+    ---
+    string[] transcript
+        ```
+
+9.  `TextToSpeech.srv` : This srv specify the content of the utterance．
+    ```yaml
+    string text
+    ---
+    bool result
+    ```
+
+
+10.  `wheel_control.srv` : This srv allows to move the robot according to the specified angle and/or distance.
     ```yaml
     float64 straight_line
     float64 turn_angle
@@ -246,7 +261,7 @@ ROS services customized by SOBITS are shown below.
     string responce
     ```
 
-9.  `wheel_ctrl.srv` : This srv checks if the movement has been done correctly according to the specified method.
+11.  `wheel_ctrl.srv` : This srv checks if the movement has been done correctly according to the specified method.
     ```yaml
     string move_order
     ---
