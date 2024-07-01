@@ -35,7 +35,7 @@ add_service_files(
   put_ctrl.srv
   robot_motion.srv
   RunCtrl.srv
-  Speech_Recognition.srv
+  SpeechRecognition.srv
   TextToSpeech.srv
   wheel_control.srv
   wheel_ctrl.srv
