@@ -1,4 +1,4 @@
-string  Class
+string  class_name
 float64 probability
 int32   xmin
 int32   ymin

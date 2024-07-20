@@ -1,26 +1,25 @@
 <?xml version="1.0"?>
-<?xml-model
-  href="http://download.ros.org/schema/package_format3.xsd"
-  schematypens="http://www.w3.org/2001/XMLSchema"?>
+<?xml-model href="http://download.ros.org/schema/package_format3.xsd" schematypens="http://www.w3.org/2001/XMLSchema"?>
 <package format="3">
   <name>sobits_msgs</name>
   <version>0.0.0</version>
-  <description>
-    Common custom ROS msgs for SOBITS robots.
-  </description>
-  <maintainer email="kvalentincardenas@gmail.com">Keith Valentin</maintainer>
+  <description>TODO: Package description</description>
+  <maintainer email="sobits@todo.todo">sobits</maintainer>
+  <license>TODO: License declaration</license>
 
-  <license>BSD</license>
+  <buildtool_depend>ament_cmake</buildtool_depend>
 
-  <url type="website">https://home.soka.ac.jp/~choi/index.html</url>
-  <url type="repository">https://github.com/TeamSOBITS/sobits_msgs</url>
-  <url type="bugtracker">https://github.com/TeamSOBITS/sobits_msgs/issues</url>
-  <author email="choi.7f@gmail.com">Team SOBITS</author>
+  <test_depend>ament_lint_auto</test_depend>
+  <test_depend>ament_lint_common</test_depend>
 
-  <buildtool_depend>catkin</buildtool_depend>
-  
-  <depend>message_generation</depend>
-  <depend>message_runtime</depend>
+  <export>
+    <build_type>ament_cmake</build_type>
+    <build_depend>rosidl_default_generators</build_depend>
+    <exec_depend>rosidl_default_runtime</exec_depend>
+  </export>
+
+
+  <member_of_group>rosidl_interface_packages</member_of_group>
   <depend>std_msgs</depend>
   <depend>geometry_msgs</depend>
 

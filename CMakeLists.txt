@@ -1,62 +1,60 @@
-cmake_minimum_required(VERSION 3.10.2)
+cmake_minimum_required(VERSION 3.8)
 project(sobits_msgs)
 
-## Find catkin macros and libraries
-## if COMPONENTS list like find_package(catkin REQUIRED COMPONENTS xyz)
-## is used, also find other catkin packages
-find_package(catkin REQUIRED COMPONENTS
-  std_msgs
-  message_generation
-  geometry_msgs
+if(CMAKE_COMPILER_IS_GNUCXX OR CMAKE_CXX_COMPILER_ID MATCHES "Clang")
+  add_compile_options(-Wall -Wextra -Wpedantic)
+endif()
+
+# find dependencies
+find_package(ament_cmake REQUIRED)
+find_package(std_msgs REQUIRED)
+find_package(geometry_msgs REQUIRED)
+find_package(rosidl_default_generators REQUIRED)
+
+set(msg_files
+  "msg/BoundingBox.msg"
+  "msg/BoundingBoxes.msg"
+  "msg/CurrentState.msg"
+  "msg/CurrentStateArray.msg"
+  "msg/MotorState.msg"
+  "msg/MotorStateArray.msg"
+  "msg/ObjectPose.msg"
+  "msg/ObjectPoseArray.msg"
+  "msg/StringArray.msg"
+)
+set(srv_files
+  "srv/GraspingJudgment.srv"
+  "srv/GripperCtrl.srv"
+  "srv/GripperMove.srv"
+  "srv/OdomBase.srv"
+  "srv/PutCtrl.srv"
+  "srv/RobotMotion.srv"
+  "srv/RunCtrl.srv"
+  "srv/SpeechRecognition.srv"
+  "srv/TextToSpeech.srv"
+  "srv/WheelControl.srv"
+  "srv/WheelCtrl.srv"
+)
+rosidl_generate_interfaces(${PROJECT_NAME}
+  ${msg_files}
+  ${srv_files}
+  DEPENDENCIES std_msgs geometry_msgs
 )
 
-# Generate messages in the 'msg' folder
-add_message_files(
-  FILES
-  BoundingBox.msg
-  # BoundingBoxArray.msg
-  BoundingBoxes.msg
-  current_state.msg
-  current_state_array.msg
-  MotorState.msg
-  MotorStateArray.msg
-  ObjectPose.msg
-  ObjectPoseArray.msg
-  StringArray.msg
-)
+# uncomment the following section in order to fill in
+# further dependencies manually.
+# find_package(<dependency> REQUIRED)
 
-# Generate services in the 'srv' folder
-add_service_files(
-  FILES
-  grasping_jedgment.srv
-  gripper_ctrl.srv
-  gripper_move.srv
-  odom_base.srv
-  put_ctrl.srv
-  robot_motion.srv
-  RunCtrl.srv
-  SpeechRecognition.srv
-  TextToSpeech.srv
-  wheel_control.srv
-  wheel_ctrl.srv
-)
+if(BUILD_TESTING)
+  find_package(ament_lint_auto REQUIRED)
+  # the following line skips the linter which checks for copyrights
+  # comment the line when a copyright and license is added to all source files
+  set(ament_cmake_copyright_FOUND TRUE)
+  # the following line skips cpplint (only works in a git repo)
+  # comment the line when this package is in a git repo and when
+  # a copyright and license is added to all source files
+  set(ament_cmake_cpplint_FOUND TRUE)
+  ament_lint_auto_find_test_dependencies()
+endif()
 
-# Generate added messages and services with any dependencies listed here
-generate_messages(
-  DEPENDENCIES
-  std_msgs
-  geometry_msgs
-)
-
-###################################
-## catkin specific configuration ##
-###################################
-## The catkin_package macro generates cmake config files for your package
-## Declare things to be passed to dependent projects
-## INCLUDE_DIRS: uncomment this if your package contains header files
-## LIBRARIES: libraries you create in this project that dependent projects also need
-## CATKIN_DEPENDS: catkin_packages dependent projects also need
-## DEPENDS: system dependencies of this project that dependent projects also need
-catkin_package(
-  CATKIN_DEPENDS std_msgs message_runtime geometry_msgs
-)
+ament_package()
