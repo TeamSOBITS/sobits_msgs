@@ -1,5 +1,5 @@
 cmake_minimum_required(VERSION 3.8)
-project(sobits_msgs)
+project(sobits_interfaces)
 
 if(CMAKE_COMPILER_IS_GNUCXX OR CMAKE_CXX_COMPILER_ID MATCHES "Clang")
   add_compile_options(-Wall -Wextra -Wpedantic)
@@ -12,32 +12,27 @@ find_package(geometry_msgs REQUIRED)
 find_package(rosidl_default_generators REQUIRED)
 
 set(msg_files
-  "msg/BoundingBox.msg"
-  "msg/BoundingBoxes.msg"
-  "msg/CurrentState.msg"
-  "msg/CurrentStateArray.msg"
-  "msg/MotorState.msg"
-  "msg/MotorStateArray.msg"
-  "msg/ObjectPose.msg"
-  "msg/ObjectPoseArray.msg"
-  "msg/StringArray.msg"
+  msg/BoundingBox.msg
+  msg/BoundingBoxes.msg
+  msg/CurrentState.msg
+  msg/CurrentStateArray.msg
+  msg/ObjectPose.msg
+  msg/ObjectPoseArray.msg
+  msg/StringArray.msg
 )
 set(srv_files
-  "srv/GraspingJudgment.srv"
-  "srv/GripperCtrl.srv"
-  "srv/GripperMove.srv"
-  "srv/OdomBase.srv"
-  "srv/PutCtrl.srv"
-  "srv/RobotMotion.srv"
-  "srv/RunCtrl.srv"
-  "srv/SpeechRecognition.srv"
-  "srv/TextToSpeech.srv"
-  "srv/WheelControl.srv"
-  "srv/WheelCtrl.srv"
+  srv/RunCtrl.srv
+  srv/SpeechRecognition.srv
+  srv/TextToSpeech.srv
 )
+set(action_files
+  action/ChatLlmRecognition.action
+)
+
 rosidl_generate_interfaces(${PROJECT_NAME}
   ${msg_files}
   ${srv_files}
+  ${action_files}
   DEPENDENCIES std_msgs geometry_msgs
 )
 
