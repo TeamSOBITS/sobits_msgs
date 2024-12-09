@@ -19,6 +19,7 @@ set(msg_files
   msg/ObjectPose.msg
   msg/ObjectPoseArray.msg
   msg/StringArray.msg
+  msg/HumanPose.msg
 )
 set(srv_files
   srv/RunCtrl.srv
