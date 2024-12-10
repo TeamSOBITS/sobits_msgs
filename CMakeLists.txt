@@ -20,9 +20,11 @@ set(msg_files
   msg/ObjectPoseArray.msg
   msg/StringArray.msg
   msg/HumanPose.msg
+  msg/HumanPoseArray.msg
 )
 set(srv_files
   srv/RunCtrl.srv
+  srv/ModeCtrl.srv
   srv/SpeechRecognition.srv
   srv/TextToSpeech.srv
 )
