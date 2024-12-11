@@ -1,0 +1,9 @@
+# Goal(Serviceでいうところのrequest)
+int64 timeout_sec
+---
+# Result(Serviceのresultと同じ)
+string transcript  # ここをリストにするのかどうか迷いどころ
+bool is_cancel
+---
+# Feedback(actionlibオリジナルの途中経過のメッセージ)
+string wip_result  # LLMのやつと同じで途中経過。単語区切りにしてwip_wordとかにしてもあり
