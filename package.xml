@@ -22,5 +22,6 @@
   <member_of_group>rosidl_interface_packages</member_of_group>
   <depend>std_msgs</depend>
   <depend>geometry_msgs</depend>
+  <depend>sensor_msgs</depend>
 
 </package>
