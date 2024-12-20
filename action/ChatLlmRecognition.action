@@ -3,6 +3,7 @@
 string room_name            # 部屋名指定
 string request              # リクエストメッセージ
 sensor_msgs/Image[] image   # 入力画像のリスト
+string model_name           # modelの名前
 bool is_stack               # このやり取りをroom_nameにメモリーするか
 ---
 # Result
