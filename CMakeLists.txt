@@ -19,8 +19,8 @@ set(msg_files
   msg/ObjectPose.msg
   msg/ObjectPoseArray.msg
   msg/StringArray.msg
-  msg/HumanPose.msg
-  msg/HumanPoseArray.msg
+  msg/KeyPoint.msg
+  msg/KeyPointArray.msg
 )
 set(srv_files
   srv/RunCtrl.srv
