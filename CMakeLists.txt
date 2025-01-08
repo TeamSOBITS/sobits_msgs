@@ -26,11 +26,12 @@ set(msg_files
 set(srv_files
   srv/RunCtrl.srv
   srv/ModeCtrl.srv
-  srv/SpeechRecognition.srv
+  # srv/SpeechRecognition.srv
   srv/TextToSpeech.srv
 )
 set(action_files
   action/ChatLlmRecognition.action
+  action/SpeechRecognition.action
 )
 
 rosidl_generate_interfaces(${PROJECT_NAME}
