@@ -41,6 +41,8 @@ rosidl_generate_interfaces(${PROJECT_NAME}
   DEPENDENCIES std_msgs geometry_msgs sensor_msgs
 )
 
+install(DIRECTORY mp3 DESTINATION share/${PROJECT_NAME})
+
 # uncomment the following section in order to fill in
 # further dependencies manually.
 # find_package(<dependency> REQUIRED)
