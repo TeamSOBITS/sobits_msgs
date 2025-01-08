@@ -1,9 +1,10 @@
-# Goal(Serviceでいうところのrequest)
+# Goal
 int64 timeout_sec
+bool silent_mode
+float64 feedback_rate 0.5
 ---
-# Result(Serviceのresultと同じ)
-string transcript  # ここをリストにするのかどうか迷いどころ
-bool is_cancel
+# Result
+string result_text
 ---
-# Feedback(actionlibオリジナルの途中経過のメッセージ)
-string[] wip_result  # LLMのやつと同じで途中経過。単語区切りにしてwip_wordとかにしてもあり
+# Feedback
+string addition_text
