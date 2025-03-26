@@ -10,6 +10,7 @@ find_package(ament_cmake REQUIRED)
 find_package(std_msgs REQUIRED)
 find_package(geometry_msgs REQUIRED)
 find_package(sensor_msgs REQUIRED)
+find_package(vision_msgs REQUIRED)
 find_package(rosidl_default_generators REQUIRED)
 
 set(msg_files
@@ -22,22 +23,30 @@ set(msg_files
   msg/StringArray.msg
   msg/KeyPoint.msg
   msg/KeyPointArray.msg
+  msg/Feature.msg
 )
 set(srv_files
   srv/RunCtrl.srv
   srv/ModeCtrl.srv
+  srv/MoveHandToTargetCoord.srv
+  srv/MoveHandToTargetTF.srv
+  srv/Features.srv
 )
 set(action_files
   action/ChatLlmRecognition.action
   action/SpeechRecognition.action
   action/TextToSpeech.action
+  action/MoveJoint.action
+  action/MoveToPose.action
+  action/MoveWheelLinear.action
+  action/MoveWheelRotate.action
 )
 
 rosidl_generate_interfaces(${PROJECT_NAME}
   ${msg_files}
   ${srv_files}
   ${action_files}
-  DEPENDENCIES std_msgs geometry_msgs sensor_msgs
+  DEPENDENCIES std_msgs geometry_msgs sensor_msgs vision_msgs
 )
 
 install(DIRECTORY mp3 DESTINATION share/${PROJECT_NAME})
