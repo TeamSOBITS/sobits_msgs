@@ -31,6 +31,7 @@ set(srv_files
   srv/MoveHandToTargetCoord.srv
   srv/MoveHandToTargetTF.srv
   srv/Features.srv
+  srv/Feature3d.srv
 )
 set(action_files
   action/ChatLlmRecognition.action
