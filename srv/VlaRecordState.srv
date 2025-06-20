@@ -4,4 +4,3 @@ string request    # "record", "pause", "resume", "save", "delete"
 # Result
 bool success      # true if the action was successful, false otherwise
 string message    # "succeded", "failed"
----
