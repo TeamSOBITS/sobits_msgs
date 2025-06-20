@@ -32,6 +32,7 @@ set(srv_files
   srv/MoveHandToTargetTF.srv
   srv/Features.srv
   srv/Feature3d.srv
+  srv/VlaRecordState.srv
 )
 set(action_files
   action/ChatLlmRecognition.action
@@ -41,6 +42,7 @@ set(action_files
   action/MoveToPose.action
   action/MoveWheelLinear.action
   action/MoveWheelRotate.action
+  action/VlaRecordState.action
 )
 
 rosidl_generate_interfaces(${PROJECT_NAME}
