@@ -1,0 +1,6 @@
+# Goal
+string label    # Task label
+---
+# Result
+bool success      # true if the action was successful, false otherwise
+string message    # "succeded", "failed"
