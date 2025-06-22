@@ -1,5 +1,5 @@
 # Goal
-string request    # "record", "pause", "resume", "save", "delete"
+string command    # "record", "pause", "resume", "save", "delete"
 ---
 # Result
 bool success      # true if the action was successful, false otherwise
