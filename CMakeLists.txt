@@ -33,6 +33,7 @@ set(srv_files
   srv/Features.srv
   srv/Feature3d.srv
   srv/VlaRecordState.srv
+  srv/VlaUpdateTask.srv
 )
 set(action_files
   action/ChatLlmRecognition.action
