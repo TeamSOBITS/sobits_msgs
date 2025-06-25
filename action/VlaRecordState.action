@@ -1,0 +1,17 @@
+# Goal
+uint8 RECORD=1
+uint8 PAUSE= 2
+uint8 RESUME=3
+uint8 SAVE=4
+uint8 DELETE=5
+uint8 command
+---
+# Result
+uint8 RECORDING=1
+uint8 PAUSED=2
+uint8 STOPPED=3
+uint8 ERROR=0
+uint8 status
+---
+# Feedback
+string status     # "starting", "pausing", "stopping", "saving", "deleting"
