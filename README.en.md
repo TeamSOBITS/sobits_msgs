@@ -81,7 +81,7 @@ First, please set up the following environment before proceeding to the next ins
    ```
 2. Clone this repository.
    ```sh
-   $ git clone https://github.com/TeamSOBITS/sobits_msgs
+   $ git clone https://github.com/TeamSOBITS/sobits_interfaces
    ```
 3. Compile the package.
    ```sh
@@ -323,13 +323,13 @@ Distributed under the MIT License. See `LICENSE.txt` for more information.
 
 <!-- MARKDOWN LINKS & IMAGES -->
 <!-- https://www.markdownguide.org/basic-syntax/#reference-style-links -->
-[contributors-shield]: https://img.shields.io/github/contributors/TeamSOBITS/sobits_msgs.svg?style=for-the-badge
-[contributors-url]: https://github.com/TeamSOBITS/sobits_msgs/graphs/contributors
-[forks-shield]: https://img.shields.io/github/forks/TeamSOBITS/sobits_msgs.svg?style=for-the-badge
-[forks-url]: https://github.com/TeamSOBITS/sobits_msgs/network/members
-[stars-shield]: https://img.shields.io/github/stars/TeamSOBITS/sobits_msgs.svg?style=for-the-badge
-[stars-url]: https://github.com/TeamSOBITS/sobits_msgs/stargazers
-[issues-shield]: https://img.shields.io/github/issues/TeamSOBITS/sobits_msgs.svg?style=for-the-badge
-[issues-url]: https://github.com/TeamSOBITS/sobits_msgs/issues
-[license-shield]: https://img.shields.io/github/license/TeamSOBITS/sobits_msgs.svg?style=for-the-badge
+[contributors-shield]: https://img.shields.io/github/contributors/TeamSOBITS/sobits_interfaces.svg?style=for-the-badge
+[contributors-url]: https://github.com/TeamSOBITS/sobits_interfaces/graphs/contributors
+[forks-shield]: https://img.shields.io/github/forks/TeamSOBITS/sobits_interfaces.svg?style=for-the-badge
+[forks-url]: https://github.com/TeamSOBITS/sobits_interfaces/network/members
+[stars-shield]: https://img.shields.io/github/stars/TeamSOBITS/sobits_interfaces.svg?style=for-the-badge
+[stars-url]: https://github.com/TeamSOBITS/sobits_interfaces/stargazers
+[issues-shield]: https://img.shields.io/github/issues/TeamSOBITS/sobits_interfaces.svg?style=for-the-badge
+[issues-url]: https://github.com/TeamSOBITS/sobits_interfaces/issues
+[license-shield]: https://img.shields.io/github/license/TeamSOBITS/sobits_interfaces.svg?style=for-the-badge
 [license-url]: LICENSE
