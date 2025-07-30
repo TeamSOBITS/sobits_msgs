@@ -28,8 +28,8 @@ set(msg_files
 set(srv_files
   srv/RunCtrl.srv
   srv/ModeCtrl.srv
-  srv/MoveHandToTargetCoord.srv
-  srv/MoveHandToTargetTF.srv
+  srv/GetHandToTargetCoord.srv
+  srv/GetHandToTargetTF.srv
   srv/Features.srv
   srv/Feature3d.srv
   srv/VlaRecordState.srv
