@@ -14,8 +14,6 @@ find_package(vision_msgs REQUIRED)
 find_package(rosidl_default_generators REQUIRED)
 
 set(msg_files
-  msg/BoundingBox.msg
-  msg/BoundingBoxes.msg
   msg/CurrentState.msg
   msg/CurrentStateArray.msg
   msg/ObjectPose.msg
@@ -44,6 +42,7 @@ set(action_files
   action/MoveWheelLinear.action
   action/MoveWheelRotate.action
   action/VlaRecordState.action
+  action/DisplayControl.action
 )
 
 rosidl_generate_interfaces(${PROJECT_NAME}
