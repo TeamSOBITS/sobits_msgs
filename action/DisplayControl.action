@@ -1,0 +1,13 @@
+# display_control.action
+# Goal
+string topic_name
+string file_path
+string text
+string state
+builtin_interfaces/Duration display_time
+---
+# Result
+string result
+---
+# Feedback
+builtin_interfaces/Duration remaining_time
