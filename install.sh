@@ -1,6 +1,6 @@
 #!/bin/bash
 
-echo "╔══╣ Setup: SOBIT INTERFACES (STARTING) ╠══╗"
+echo "╔══╣ Setup: SOBITS INTERFACES (STARTING) ╠══╗"
 
 # Download ROS packages
 sudo apt update
