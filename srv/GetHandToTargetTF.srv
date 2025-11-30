@@ -1,4 +1,4 @@
-# MoveHandToTargetTF.srv
+# GetHandToTargetTF.srv
 # Request
 string target_frame                             # Frame name to be grasped
 geometry_msgs/TransformStamped tf_differential  # Differential coordinates of Target frame
