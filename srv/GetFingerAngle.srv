@@ -1,0 +1,13 @@
+# GetFingerAngle.srv
+# Request
+int8 grasp_form                                 # Approach form of gripper 0:two fingers, 1:three fingers
+bool is_right                                   # Left/right judgment
+string grasp_mode                               # Pick/grasp judgment
+
+---
+# Result
+string[] target_joint_names                     # List of joint names to move
+float64[] opened_target_joint_rad               # List of joint angles to open gripper
+float64[] closed_target_joint_rad               # List of joint angles to close gripper
+bool success                                    # Enable grasp
+string message                                  # Result message

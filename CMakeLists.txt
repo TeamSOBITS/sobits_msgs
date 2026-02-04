@@ -34,6 +34,7 @@ set(srv_files
   srv/Feature3d.srv
   srv/VlaRecordState.srv
   srv/VlaUpdateTask.srv
+  srv/GetFingerAngle.srv
 )
 set(action_files
   action/ChatLlmRecognition.action
@@ -44,6 +45,7 @@ set(action_files
   action/MoveWheelLinear.action
   action/MoveWheelRotate.action
   action/VlaRecordState.action
+  action/DisplayControl.action
 )
 
 rosidl_generate_interfaces(${PROJECT_NAME}
