@@ -14,8 +14,6 @@ find_package(vision_msgs REQUIRED)
 find_package(rosidl_default_generators REQUIRED)
 
 set(msg_files
-  msg/BoundingBox.msg
-  msg/BoundingBoxes.msg
   msg/CurrentState.msg
   msg/CurrentStateArray.msg
   msg/ObjectPose.msg
@@ -28,8 +26,8 @@ set(msg_files
 set(srv_files
   srv/RunCtrl.srv
   srv/ModeCtrl.srv
-  srv/MoveHandToTargetCoord.srv
-  srv/MoveHandToTargetTF.srv
+  srv/GetHandToTargetCoord.srv
+  srv/GetHandToTargetTF.srv
   srv/Features.srv
   srv/Feature3d.srv
   srv/VlaRecordState.srv

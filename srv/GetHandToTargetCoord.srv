@@ -1,4 +1,4 @@
-# MoveHandToTargetCoord.srv
+# GetHandToTargetCoord.srv
 # Request
 geometry_msgs/TransformStamped target_coord     # Target coordinates
 

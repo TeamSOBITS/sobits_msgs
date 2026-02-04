@@ -1,10 +1,10 @@
 #!/bin/bash
 
-echo "╔══╣ Setup: sobits interfaces (STARTING) ╠══╗"
+echo "╔══╣ Setup: SOBITS INTERFACES (STARTING) ╠══╗"
 
 # Download ROS packages
-sudo apt-get update
-sudo apt-get install -y \
+sudo apt update
+sudo apt install -y \
     ros-$ROS_DISTRO-vision-msgs
 
-echo "╚══╣ Setup: sobits interfaces (FINISHED) ╠══╝"
+echo "╚══╣ Setup: SOBITS INTERFACES (FINISHED) ╠══╝"
