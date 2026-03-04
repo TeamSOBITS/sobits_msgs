@@ -14,18 +14,11 @@ find_package(vision_msgs REQUIRED)
 find_package(rosidl_default_generators REQUIRED)
 
 set(msg_files
-  msg/CurrentState.msg
-  msg/CurrentStateArray.msg
-  msg/ObjectPose.msg
-  msg/ObjectPoseArray.msg
-  msg/StringArray.msg
   msg/KeyPoint.msg
   msg/KeyPointArray.msg
   msg/Feature.msg
 )
 set(srv_files
-  srv/RunCtrl.srv
-  srv/ModeCtrl.srv
   srv/GetHandToTargetCoord.srv
   srv/GetHandToTargetTF.srv
   srv/Features.srv
