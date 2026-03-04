@@ -17,6 +17,8 @@ set(msg_files
   msg/KeyPoint.msg
   msg/KeyPointArray.msg
   msg/Feature.msg
+  msg/DetectMask.msg
+  msg/DetectMaskArray.msg
 )
 set(srv_files
   srv/GetHandToTargetCoord.srv
