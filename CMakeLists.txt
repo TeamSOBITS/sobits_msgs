@@ -19,6 +19,7 @@ set(msg_files
   msg/Feature.msg
   msg/DetectMask.msg
   msg/DetectMaskArray.msg
+  msg/SoundDetection.msg
 )
 set(srv_files
   srv/GetHandToTargetCoord.srv
@@ -39,6 +40,7 @@ set(action_files
   action/MoveWheelRotate.action
   action/VlaRecordState.action
   action/DisplayControl.action
+  action/ListenForSound.action
 )
 
 rosidl_generate_interfaces(${PROJECT_NAME}
