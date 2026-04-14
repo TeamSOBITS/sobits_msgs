@@ -12,6 +12,7 @@ find_package(geometry_msgs REQUIRED)
 find_package(sensor_msgs REQUIRED)
 find_package(vision_msgs REQUIRED)
 find_package(rosidl_default_generators REQUIRED)
+find_package(moveit_msgs REQUIRED)
 
 set(msg_files
   msg/KeyPoint.msg
@@ -28,6 +29,7 @@ set(srv_files
   srv/VlaRecordState.srv
   srv/VlaUpdateTask.srv
   srv/GetFingerAngle.srv
+  srv/PlanToPose.srv
 )
 set(action_files
   action/ChatLlmRecognition.action
@@ -39,13 +41,14 @@ set(action_files
   action/MoveWheelRotate.action
   action/VlaRecordState.action
   action/DisplayControl.action
+  action/ExecutePlan.action
 )
 
 rosidl_generate_interfaces(${PROJECT_NAME}
   ${msg_files}
   ${srv_files}
   ${action_files}
-  DEPENDENCIES std_msgs geometry_msgs sensor_msgs vision_msgs
+  DEPENDENCIES std_msgs geometry_msgs sensor_msgs vision_msgs moveit_msgs
 )
 
 install(DIRECTORY mp3 DESTINATION share/${PROJECT_NAME})
