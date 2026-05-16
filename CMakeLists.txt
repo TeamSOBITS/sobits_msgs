@@ -20,6 +20,8 @@ set(msg_files
   msg/Feature.msg
   msg/DetectMask.msg
   msg/DetectMaskArray.msg
+  msg/Posture.msg
+  msg/PostureArray.msg
 )
 set(srv_files
   srv/GetHandToTargetCoord.srv
