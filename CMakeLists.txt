@@ -30,6 +30,8 @@ set(srv_files
   srv/VlaUpdateTask.srv
   srv/GetFingerAngle.srv
   srv/PlanToPose.srv
+  srv/UpdateCollisionObject.srv
+  srv/UpdateAttachedObject.srv
 )
 set(action_files
   action/ChatLlmRecognition.action

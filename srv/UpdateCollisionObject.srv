@@ -1,0 +1,5 @@
+string[] tf_frame_ids
+moveit_msgs/CollisionObject[] collision_objects
+---
+bool success
+string message
