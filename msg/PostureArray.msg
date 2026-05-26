@@ -1,2 +1,2 @@
 std_msgs/Header header
-sobits_interfaces/Posture[] postuers
+sobits_interfaces/Posture[] postures
