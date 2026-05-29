@@ -1,4 +1,6 @@
+# Request
 moveit_msgs/AttachedCollisionObject attached_object
 ---
+# Result
 bool success
 string message
