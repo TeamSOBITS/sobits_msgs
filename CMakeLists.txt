@@ -32,6 +32,7 @@ set(srv_files
   srv/PlanToPose.srv
   srv/UpdateCollisionObject.srv
   srv/UpdateAttachedObject.srv
+  srv/AllowCollisions.srv
 )
 set(action_files
   action/ChatLlmRecognition.action

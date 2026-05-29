@@ -1,0 +1,7 @@
+string[] collision_ids
+bool allow        # true = 衝突なし, false = 衝突あり
+
+---
+
+bool success
+string message
