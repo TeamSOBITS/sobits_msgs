@@ -11,6 +11,7 @@ find_package(std_msgs REQUIRED)
 find_package(geometry_msgs REQUIRED)
 find_package(sensor_msgs REQUIRED)
 find_package(vision_msgs REQUIRED)
+find_package(builtin_interfaces REQUIRED)
 find_package(rosidl_default_generators REQUIRED)
 
 set(msg_files
@@ -47,7 +48,7 @@ rosidl_generate_interfaces(${PROJECT_NAME}
   ${msg_files}
   ${srv_files}
   ${action_files}
-  DEPENDENCIES std_msgs geometry_msgs sensor_msgs vision_msgs
+  DEPENDENCIES std_msgs geometry_msgs sensor_msgs vision_msgs builtin_interfaces
 )
 
 install(DIRECTORY mp3 DESTINATION share/${PROJECT_NAME})
