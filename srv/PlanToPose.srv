@@ -1,0 +1,10 @@
+# Request
+string planning_group             # "left_arm", "both_arms", "mobile_base_left_arm", etc.
+geometry_msgs/PoseStamped target  # Frame and coordinates combined
+---
+# Response
+bool success
+string message
+string plan_id                             # The unique token used to execute this plan later
+moveit_msgs/RobotTrajectory trajectory     # The generated trajectory for human/client review
+float64 estimated_time                     # How long the trajectory will take

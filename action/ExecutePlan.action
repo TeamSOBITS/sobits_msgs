@@ -1,0 +1,9 @@
+# Goal
+string plan_id
+---
+# Result
+bool success
+string message
+---
+# Feedback
+string current_state
