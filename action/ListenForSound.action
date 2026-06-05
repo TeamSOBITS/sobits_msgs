@@ -1,0 +1,14 @@
+# Goal
+string[] target_labels                  # empty = use the action server's default labels
+builtin_interfaces/Duration timeout     # zero duration = no timeout
+---
+# Result
+bool detected                         # true if sound was detected before timeout
+string label                          # class name that triggered (e.g. "Doorbell")
+float32 score                         # score of the detected class
+builtin_interfaces/Duration elapsed_time
+---
+# Feedback
+string current_top_label              # overall top class right now
+float32 current_top_score             # its score
+bool candidate_detected               # any target class above threshold this frame
