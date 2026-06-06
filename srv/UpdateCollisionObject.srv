@@ -1,7 +1,0 @@
-# Request
-string[] tf_frame_ids
-moveit_msgs/CollisionObject[] collision_objects
----
-# Result
-bool success
-string message

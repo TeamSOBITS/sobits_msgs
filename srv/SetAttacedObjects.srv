@@ -1,0 +1,13 @@
+# Request
+
+# Array of AttachedCollisionObjects to be attached to or detached from the robot
+moveit_msgs/AttachedCollisionObject[] attached_objects
+
+---
+#Result
+
+# Request execution result
+bool success
+
+# Detailed result or error message
+string message

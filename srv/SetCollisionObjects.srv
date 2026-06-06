@@ -1,0 +1,13 @@
+# TF frame names used to determine the pose of each CollisionObject
+string[] target_frames
+
+# CollisionObjects to be applied to the MoveIt Planning Scene.
+# The pose of each object is updated using the corresponding TF frame.
+moveit_msgs/CollisionObject[] collision_objects
+
+---
+# Request execution result
+bool success
+
+# Detailed result or error message
+string message
