@@ -34,6 +34,9 @@ set(srv_files
   srv/VlaUpdateTask.srv
   srv/GetFingerAngle.srv
   srv/PlanToPose.srv
+  srv/SetAllowedCollisions.srv
+  srv/SetAttachedObjects.srv
+  srv/SetCollisionObjects.srv
 )
 set(action_files
   action/ChatLlmRecognition.action

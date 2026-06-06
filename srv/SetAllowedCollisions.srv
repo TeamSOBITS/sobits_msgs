@@ -1,0 +1,18 @@
+# Request
+
+# IDs of CollisionObjects whose Allowed Collision Matrix settings
+string[] collision_ids
+
+# Collision permission setting
+# true: allow collisions
+# false: disallow collisions
+bool allow
+
+---
+# Result
+
+# Request execution result
+bool success
+
+# Detailed result or error message
+string message
