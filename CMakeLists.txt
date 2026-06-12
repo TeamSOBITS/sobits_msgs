@@ -24,6 +24,7 @@ set(msg_files
   msg/SoundDetection.msg
   msg/Posture.msg
   msg/PostureArray.msg
+  msg/BatteryStateArray.msg
 )
 set(srv_files
   srv/GetHandToTargetCoord.srv
