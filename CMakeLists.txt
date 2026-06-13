@@ -30,8 +30,8 @@ set(srv_files
   srv/GetHandToTargetTF.srv
   srv/Features.srv
   srv/Feature3d.srv
-  srv/VlaRecordState.srv
   srv/VlaUpdateTask.srv
+  srv/VlaCommand.srv
   srv/GetFingerAngle.srv
   srv/PlanToPose.srv
   srv/SetAllowedCollisions.srv
@@ -46,7 +46,6 @@ set(action_files
   action/MoveToPose.action
   action/MoveWheelLinear.action
   action/MoveWheelRotate.action
-  action/VlaRecordState.action
   action/DisplayControl.action
   action/ListenForSound.action
   action/ExecutePlan.action
