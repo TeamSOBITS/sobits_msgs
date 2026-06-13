@@ -28,7 +28,6 @@ set(srv_files
   srv/GetHandToTargetTF.srv
   srv/Features.srv
   srv/Feature3d.srv
-  srv/VlaRecordState.srv
   srv/VlaUpdateTask.srv
   srv/VlaCommand.srv
   srv/GetFingerAngle.srv
