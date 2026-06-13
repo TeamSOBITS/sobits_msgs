@@ -41,7 +41,6 @@ set(action_files
   action/MoveToPose.action
   action/MoveWheelLinear.action
   action/MoveWheelRotate.action
-  action/VlaRecordState.action
   action/DisplayControl.action
   action/ExecutePlan.action
 )
