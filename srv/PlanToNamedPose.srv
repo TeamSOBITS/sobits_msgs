@@ -1,6 +1,6 @@
 # Request
 string planning_group             # "left_arm", "both_arms", "mobile_base_left_arm", etc.
-string pose_name
+string pose_name                  # pose_name, e.g. "initial_pose".
 ---
 # Response
 bool success
