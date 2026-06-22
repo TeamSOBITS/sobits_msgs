@@ -34,6 +34,7 @@ set(srv_files
   srv/VlaCommand.srv
   srv/GetFingerAngle.srv
   srv/PlanToPose.srv
+  srv/PlanToNamedPose.srv
   srv/SetAllowedCollisions.srv
   srv/SetAttachedObjects.srv
   srv/SetCollisionObjects.srv
