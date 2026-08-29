@@ -5,6 +5,7 @@ uint8 SAVE=3
 uint8 DELETE=4
 uint8 PLAY=5
 uint8 STOP=6
+uint8 RESET=7
 uint8 command
 ---
 uint8 STATE_STOPPED=0

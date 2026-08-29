@@ -32,6 +32,7 @@ set(srv_files
   srv/Feature3d.srv
   srv/VlaUpdateTask.srv
   srv/VlaCommand.srv
+  srv/VlaResetWorld.srv
   srv/GetFingerAngle.srv
   srv/PlanToPose.srv
   srv/PlanToNamedPose.srv

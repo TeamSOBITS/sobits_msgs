@@ -1,0 +1,5 @@
+string preset            # "" -> default scene from the YAML
+---
+bool success
+string message
+string[] models_reset
